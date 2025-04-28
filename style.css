@@ -211,6 +211,7 @@ nav {
 
 .project__img {
     width: 100%;
+    transition: all 500ms ease;
 }
 
 .project__wrapper {
@@ -231,7 +232,12 @@ nav {
     background-color: #1c1d25;
     opacity: 0;
     transition: opacity 450ms ease;
+    z-index: 2;
 }
 .project:hover .project__wrapper:before {
     opacity: 0.7;
+}
+.project:hover .project__img {
+    transform: scale(1.07);
+    filter: blur(5px);
 }
